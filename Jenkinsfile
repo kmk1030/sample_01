@@ -22,7 +22,7 @@ pipeline {
 				sh "./gradlew build"
 			}
 	}
-
+}
 /*
 	stages {
 		stage("test: baseline (jdk8)") {
