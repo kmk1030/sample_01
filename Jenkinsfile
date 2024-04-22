@@ -13,13 +13,16 @@ pipeline {
 	stages {
 		stage('github clone') {
             steps() {
-				git 'https://github.com/kmk1030/sample_01.git'
+				git branch: 'main', credentialsId: 'kmk1030',
+				url: 'https://github.com/kmk1030/sample_01'
             }
         }
 		stage('Build') {
 			steps {
-				echo 'Build ....'
-				sh "./gradlew build"
+				sh '''
+					echo 'Build ....'
+					"./gradlew build"
+				'''
 			}
 		}
 	}
