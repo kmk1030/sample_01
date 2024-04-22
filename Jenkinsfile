@@ -21,6 +21,7 @@ pipeline {
 				echo 'Build ....'
 				sh "./gradlew build"
 			}
+		}
 	}
 }
 /*
