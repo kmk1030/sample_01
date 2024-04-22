@@ -33,6 +33,8 @@ pipeline {
 					echo 'Check jar...'
 					ls -al ./build/libs
 				'''
+			}
+		}
 	}
 }
 /*
