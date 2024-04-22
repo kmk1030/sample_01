@@ -17,7 +17,7 @@ pipeline {
             }
         }
 		stage('Build') {
-			stpes {
+			steps {
 				echo 'Build ....'
 				sh "./gradlew build"
 			}
