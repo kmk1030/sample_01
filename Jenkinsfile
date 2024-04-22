@@ -21,6 +21,8 @@ pipeline {
 			steps {
 				sh '''
 					echo 'Build ....'
+					pwd
+					ls -al
 					"./gradlew build"
 				'''
 			}
