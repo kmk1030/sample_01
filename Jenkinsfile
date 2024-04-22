@@ -27,6 +27,12 @@ pipeline {
 				'''
 			}
 		}
+		stage('Check jar') {
+			steps {
+				sh '''
+					echo 'Check jar...'
+					ls -al ./build/libs
+				'''
 	}
 }
 /*
