@@ -23,7 +23,7 @@ pipeline {
 					echo 'Build ....'
 					pwd
 					ls -al
-					"./gradlew build"
+					./gradlew build
 				'''
 			}
 		}
